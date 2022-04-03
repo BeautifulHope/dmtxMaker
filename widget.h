@@ -16,10 +16,17 @@ public:
     explicit Widget(QWidget *parent = nullptr);
     ~Widget();
 
+    void GenerImage(QString str);
+    void SaveImage(int mode);
+
 public:
     QImage globalImg;//存储图片用
     QImage globalImg2;//存储图片用
     QString globastr;//保存str信息
+
+    int moduleSize = 0;
+    int marginSize = 0;
+
 
 private slots:
     void on_pushButton_clicked();
